@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Guess Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="colorGame.css">
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="sub-container">
+        <div class="game-container">
+          <button class="game-btn1" onclick="randColorGame('Red')">Red</button>
+          <button class="game-btn2" onclick="randColorGame('Blue')">Blue</button>
+          <button class="game-btn3" onclick="randColorGame('Yellow')">Yellow</button>
+        </div>
+        <div class="result-container">
+          <h4 class="gameR-text">Game Result</h4>
+          <p class="result-output"></p>
+          <button class="reset-btn" onclick="resetScoreBoard()">Reset Score</button>
+        </div>
+      </div>
+      <div class="text-container">
+        <h1 class="greet-text">Welcome stranger! </h1>
+        <p class="tag-text">This is a simple Color Game on Web, Guess it and you win!</p>
+        <h3 class="mechanics-text">Game Mechanics</h3>
+        <ul>
+          <li>Pick a color you want to guess</li>
+          <li>Click the button</li>
+          <li>Then its either you win or lose : D</li>
+        </ul>
+        <h3 class="good-luck-text">Goodluck and Enjoy!</h3>
+        <p class="quote">"If at first you dont succeed, try, try, try again."</p>
+        <p class="unknown-text">-Unknown</p>
+      </div>
+    </div>
+      <script src="colorGame.js"></script>
+  </body>
+</html>
